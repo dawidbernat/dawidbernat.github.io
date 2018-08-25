@@ -21,12 +21,12 @@
 }
 
 html {
-    font-family: 'Saira', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
     color: #2f3542;
 }
 
 body img {
-    max-width: 100%;
+    width: 100%;
 }
 
 header {
@@ -45,11 +45,13 @@ header h1 {
 }
 
 section.about {
-    padding: 30px 0 30px;
+    padding: 30px 10vw 30px;
     text-align: justify;
     background-color: #eee;
+    border-bottom: 1px solid var(--black)
 }
 
+;
 section.about p {
     max-width: 80%;
     margin: 0 auto;
@@ -75,6 +77,13 @@ section.members p {
     line-height: 61px;
 }
 
+div.roma,
+div.darek,
+div.rafal,
+div.dawid {
+    border-bottom: 1px solid var(--black);
+}
+
 div.darek {
     background-color: #eee;
 }
@@ -84,8 +93,9 @@ div.dawid {
 }
 
 section.contact {
-    padding: 25px 0;
+    padding: 30px 10vw 30px;
     text-align: center;
+    border-bottom: 1px solid var(--black);
 }
 
 section.contact a {
@@ -101,30 +111,27 @@ section.contact a.button {
     text-decoration: none;
     text-align: center;
     font-weight: 600;
-    padding: 20px;
+    padding: 20px 0px;
     margin: 30px auto 10px;
-    max-width: 80%;
+    max-width: 300px;
     border: 2px solid #2f3542;
 }
 
 section.contact h1 {
     padding-bottom: 20px;
+    font-size: 26px;
 }
 
 section.audiolight {
-    padding: 25px 0;
+    padding: 30px 10vw 30px;
     text-align: justify;
     background-color: #eee;
-}
-
-section.audiolight p {
-    max-width: 80%;
-    margin: 0 auto;
 }
 
 section.audiolight h1 {
     text-align: center;
     padding-bottom: 20px;
+    font-size: 26px;
 }
 
 section.audiolight a {
@@ -134,9 +141,9 @@ section.audiolight a {
     text-decoration: none;
     text-align: center;
     font-weight: 600;
-    padding: 20px;
+    padding: 20px 0px;
     margin: 30px auto 10px;
-    max-width: 80%;
+    max-width: 300px;
     border: 2px solid #2f3542;
 }
 
@@ -161,10 +168,10 @@ footer a {
         line-height: 80vh;
         font-size: 80px;
     }
-    .about,
-    .members,
-    .contact,
-    .audiolight {
+    section.about,
+    section.members,
+    section.contact,
+    section.audiolight {
         max-width: 90%;
         margin: 0 auto;
     }
@@ -176,9 +183,10 @@ footer a {
     }
     section.about {
         background-color: #fff;
+        border-bottom: none;
     }
     section.about p {
-        font-size: 25px;
+        font-size: 30px;
         padding: 40px 0;
     }
     div.roma,
@@ -188,6 +196,7 @@ footer a {
         height: 690px;
         float: left;
         width: 50%;
+        border-bottom: none;
     }
     div.roma,
     div.rafal {
@@ -212,15 +221,16 @@ footer a {
         margin: 50px 0;
         text-align: center;
         width: 50%;
-        height: 55vh;
+        height: 60vh;
         float: left;
         background-color: #fff;
+        border-bottom: none;
     }
     section.contact a.button,
     section.audiolight a {
-        width: 60%;
+        width: 300px;
         position: absolute;
-        top: 250px;
+        bottom: -20px;
         left: 20%;
         right: 20%;
         transition: 0.4s;
@@ -232,5 +242,17 @@ footer a {
     }
     footer {
         font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1550px) {
+    section.last {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    section.audiolight,
+    section.contact {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
