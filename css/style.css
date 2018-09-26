@@ -248,7 +248,7 @@ footer {
     section.gallery {
         flex-direction: column;
         flex-wrap: nowrap;
-        height: 300vh;
+        height: 290vh;
         justify-content: flex-start;
         background-color: rgba(34, 34, 34, 0.2);
     }
