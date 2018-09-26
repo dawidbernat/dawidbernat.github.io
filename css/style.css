@@ -8,6 +8,10 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 header {
     height: 100vh;
     position: relative;
@@ -107,10 +111,6 @@ section.gallery img {
     z-index: -1;
 }
 
-section.gallery img:hover {
-    transform: scale(2);
-}
-
 section.program {
     color: #273c75;
     text-align: center;
@@ -155,13 +155,111 @@ section.program ul li p {
     margin-top: 30px;
     font-weight: 400;
     font-size: 19px;
-    /* text-align: justify; */
 }
 
 footer {
     height: 10vh;
-    background-color: #2f3542;
+    background-color: #273c75;
     text-align: center;
     line-height: 10vh;
     color: white;
+}
+
+@media (max-width:500px) {
+    header {
+        height: 60vh;
+    }
+
+    .wrapper {
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        left: 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header h2 {
+        font-size: 15px;
+        max-width: 55%;
+    }
+
+    header img.pis {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 50vh;
+    }
+
+    header img.andrzej {
+        right: 10px;
+        bottom: 0px;
+        height: 50vh;
+    }
+
+    section.about {
+        height: 140vh;
+    }
+
+    section.about img {
+        height: 60vh;
+        left: 0;
+        top: 100%;
+        transform: translateY(-100%);
+    }
+
+    div.pWrapper {
+        padding: 30px;
+        width: 100%;
+        right: 0;
+        top: 0;
+        transform: translateY(0);
+        font-size: 20px;
+    }
+
+    section.program {
+        color: #273c75;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 30px;
+        /* height: 130vh; */
+    }
+
+    section.program h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 22px;
+        padding: 0px;
+    }
+
+    section.program ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    section.program ul li {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    section.gallery {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 280vh;
+        justify-content: flex-start;
+        background-color: rgba(34, 34, 34, 0.2);
+    }
+
+    section.gallery img {
+        width: 100%;
+    }
+
+    footer {
+        height: 10vh;
+        font-size: 17px;
+        line-height: 5vh;
+    }
 }
