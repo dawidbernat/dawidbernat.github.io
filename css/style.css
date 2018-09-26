@@ -170,20 +170,20 @@ footer {
         height: 60vh;
     }
 
-    .wrapper {
+        .wrapper {
         position: absolute;
-        bottom: 50%;
+        bottom: 67%;
         transform: translateY(50%);
         left: 10px;
     }
 
     header h1 {
-        font-size: 22px;
+        font-size: 26px;
     }
 
     header h2 {
-        font-size: 15px;
-        max-width: 55%;
+        font-size: 20px;
+        max-width: 70%;
     }
 
     header img.pis {
